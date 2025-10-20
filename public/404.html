@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Redirecting...</title>
+    <script>
+      // GitHub Pages SPA redirect
+      // Сохраняем текущий путь и редиректим на index.html
+      sessionStorage.redirect = location.href;
+    </script>
+    <meta http-equiv="refresh" content="0;URL='/my-portfolio/'">
+  </head>
+  <body>
+    <div style="font-family: system-ui; padding: 2rem; text-align: center;">
+      <h1>Redirecting...</h1>
+      <p>If you are not redirected automatically, <a href="/my-portfolio/">click here</a>.</p>
+    </div>
+  </body>
+</html>
+
