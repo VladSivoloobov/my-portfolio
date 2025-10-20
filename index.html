@@ -42,6 +42,7 @@
 
     <!-- Performance optimizations -->
     <link rel="modulepreload" href="/src/main.tsx" />
+    <link rel="icon" type="image/png" href="/favicon.png" />
 
     <!-- Critical CSS will be inlined by Vite -->
     <style>
@@ -82,10 +83,10 @@
       <!-- Loading indicator for better UX -->
       <div class="loader"></div>
     </div>
-    
+
     <!-- GitHub Pages SPA redirect handler -->
     <script>
-      (function(){
+      (function () {
         var redirect = sessionStorage.redirect;
         delete sessionStorage.redirect;
         if (redirect && redirect != location.href) {
@@ -93,7 +94,7 @@
         }
       })();
     </script>
-    
+
     <script type="module" src="/src/main.tsx"></script>
   </body>
 </html>
